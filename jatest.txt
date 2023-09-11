@@ -4,158 +4,77 @@ Cantidad de procesos: 4
 Quantum: 10
 
 Proceso	P1	P2	P3	P4
-ID	01	02	03	04
+ID		01	02	03	04
 Instruc	20	20	20	20
 Estado	N	N	N	N
 Posic	1	2	3	4
 
 
 Proceso	P1	P2	P3	P4
-ID	01	02	03	04
+ID		01	02	03	04
 Instruc	20	20	20	20
 Estado	L	L	L	L
 Posic	1	2	3	4
 
 
 Proceso	P1	P2	P3	P4
-ID	01	02	03	04
+ID		01	02	03	04
 Instruc	10	20	20	20
 Estado	E	L	L	L
 Posic	1	2	3	4
 
 
 Proceso	P1	P2	P3	P4
-ID	01	02	03	04
+ID		01	02	03	04
 Instruc	10	10	20	20
 Estado	L	E	L	L
 Posic	1	2	3	4
 
 
 Proceso	P1	P2	P3	P4
-ID	01	02	03	04
+ID		01	02	03	04
 Instruc	10	10	10	20
 Estado	L	L	E	L
 Posic	1	2	3	4
 
 
 Proceso	P1	P2	P3	P4
-ID	01	02	03	04
+ID		01	02	03	04
 Instruc	10	10	10	10
 Estado	L	L	L	E
 Posic	1	2	3	4
 
 
 Proceso	P1	P2	P3	P4
-ID	01	02	03	04
+ID		01	02	03	04
 Instruc	0	10	10	10
 Estado	E	L	L	L
 Posic	1	2	3	4
 
 
 Proceso	P1	P2	P3	P4
-ID	01	02	03	04
+ID		01	02	03	04
 Instruc	0	0	10	10
 Estado	T	E	L	L
 Posic	0	1	2	3
 
 
 Proceso	P1	P2	P3	P4
-ID	01	02	03	04
+ID		01	02	03	04
 Instruc	0	0	0	10
 Estado	T	T	E	L
 Posic	0	0	1	2
 
 
 Proceso	P1	P2	P3	P4
-ID	01	02	03	04
+ID		01	02	03	04
 Instruc	0	0	0	0
 Estado	T	T	T	E
 Posic	0	0	0	1
 
 
 Proceso	P1	P2	P3	P4
-ID	01	02	03	04
-Instruc	0	0	0	0
-Estado	T	T	T	T
-Posic	0	0	0	0
-
-Algoritmo de planificacion Round Robin
-N(Nuevo) L(Listo) E(Ejecucion) T(Terminado)
-Cantidad de procesos: 4
-Quantum: 10
-
-Proceso	P1	P2	P3	P4
-ID	01	02	03	04
-Instruc	20	20	20	20
-Estado	N	N	N	N
-Posic	1	2	3	4
-
-
-Proceso	P1	P2	P3	P4
-ID	01	02	03	04
-Instruc	20	20	20	20
-Estado	L	L	L	L
-Posic	1	2	3	4
-
-
-Proceso	P1	P2	P3	P4
-ID	01	02	03	04
-Instruc	10	20	20	20
-Estado	E	L	L	L
-Posic	1	2	3	4
-
-
-Proceso	P1	P2	P3	P4
-ID	01	02	03	04
-Instruc	10	10	20	20
-Estado	L	E	L	L
-Posic	1	2	3	4
-
-
-Proceso	P1	P2	P3	P4
-ID	01	02	03	04
-Instruc	10	10	10	20
-Estado	L	L	E	L
-Posic	1	2	3	4
-
-
-Proceso	P1	P2	P3	P4
-ID	01	02	03	04
-Instruc	10	10	10	10
-Estado	L	L	L	E
-Posic	1	2	3	4
-
-
-Proceso	P1	P2	P3	P4
-ID	01	02	03	04
-Instruc	0	10	10	10
-Estado	E	L	L	L
-Posic	1	2	3	4
-
-
-Proceso	P1	P2	P3	P4
-ID	01	02	03	04
-Instruc	0	0	10	10
-Estado	T	E	L	L
-Posic	0	1	2	3
-
-
-Proceso	P1	P2	P3	P4
-ID	01	02	03	04
-Instruc	0	0	0	10
-Estado	T	T	E	L
-Posic	0	0	1	2
-
-
-Proceso	P1	P2	P3	P4
-ID	01	02	03	04
-Instruc	0	0	0	0
-Estado	T	T	T	E
-Posic	0	0	0	1
-
-
-Proceso	P1	P2	P3	P4
-ID	01	02	03	04
+ID		01	02	03	04
 Instruc	0	0	0	0
 Estado	T	T	T	T
 Posic	0	0	0	0

@@ -64,7 +64,7 @@ class RoundRobin {
         for(Proceso p : procesos) {
             this.buffer.add("\t" + p.pcb);
         }
-        this.buffer.add("\nID");
+        this.buffer.add("\nID\t");
         for(Proceso p : procesos) {
             this.buffer.add("\t" + p.id);
         }
