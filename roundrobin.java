@@ -24,7 +24,8 @@ class RoundRobin {
     String archivo;      // Nombre del archivo de salida
     Proceso[] procesos;  // Arreglo de objetos Proceso
     ArrayList<String> buffer; // Almacena información para guardar en el archivo
-
+    int totalWaitingTime = 0;
+    int totalTurnaroundTime = 0;
     // Constructor de la clase RoundRobin
     RoundRobin(String archivo) {
         this.archivo = archivo;
@@ -47,9 +48,18 @@ class RoundRobin {
     }
 
     public static void main(String[] args) {
-        new RoundRobin("jatest.txt");
+    RoundRobin rr = new RoundRobin("jatest.txt");
+    rr.mostrarEstadisticas();
     }
-     
+
+    private void mostrarEstadisticas() {
+    double averageWaitingTime = (double) totalWaitingTime / n;
+    double averageTurnaroundTime = (double) totalTurnaroundTime / n;
+
+    System.out.println("Tiempo en espera promedio: " + averageWaitingTime);
+    System.out.println("Tiempo en sistema promedio: " + averageTurnaroundTime);
+    }
+
 
     private void tituloBuffer() {
         this.buffer.add("Algoritmo de planificacion Round Robin\n");
@@ -123,19 +133,24 @@ class RoundRobin {
     }
 
     private void trabajarProceso(Proceso p) {
-        if (p.instru > quantum) {
-            p.instru -= quantum;
-            p.estado = "E";
-            guardarBuffer();
-            p.estado = (p.instru == 0) ? "T" : "L";
-        } else if (!"T".equals(p.estado)) {
-            p.instru = 0;
-            p.estado = "E";
-            reposicionarCola();
-            guardarBuffer();
-            p.estado = "T";
-        }
+    if (p.instru > quantum) {
+        p.instru -= quantum;
+        p.estado = "E";
+        guardarBuffer();
+        p.estado = (p.instru == 0) ? "T" : "L";
+        totalWaitingTime += quantum; // Update waiting time
+    } else if (!"T".equals(p.estado)) {
+        totalWaitingTime += p.instru; // Update waiting time
+        p.instru = 0;
+        p.estado = "E";
+        reposicionarCola();
+        guardarBuffer();
+        p.estado = "T";
     }
+    totalTurnaroundTime += (quantum - p.instru); // Update turnaround time
+    guardarBuffer();
+    }
+
 
     private void guardarArchivo() {
         try {

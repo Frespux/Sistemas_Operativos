@@ -26,8 +26,22 @@ Posic	1	2	3	4
 
 Proceso	P1	P2	P3	P4
 ID		01	02	03	04
+Instruc	10	20	20	20
+Estado	L	L	L	L
+Posic	1	2	3	4
+
+
+Proceso	P1	P2	P3	P4
+ID		01	02	03	04
 Instruc	10	10	20	20
 Estado	L	E	L	L
+Posic	1	2	3	4
+
+
+Proceso	P1	P2	P3	P4
+ID		01	02	03	04
+Instruc	10	10	20	20
+Estado	L	L	L	L
 Posic	1	2	3	4
 
 
@@ -40,8 +54,22 @@ Posic	1	2	3	4
 
 Proceso	P1	P2	P3	P4
 ID		01	02	03	04
+Instruc	10	10	10	20
+Estado	L	L	L	L
+Posic	1	2	3	4
+
+
+Proceso	P1	P2	P3	P4
+ID		01	02	03	04
 Instruc	10	10	10	10
 Estado	L	L	L	E
+Posic	1	2	3	4
+
+
+Proceso	P1	P2	P3	P4
+ID		01	02	03	04
+Instruc	10	10	10	10
+Estado	L	L	L	L
 Posic	1	2	3	4
 
 
@@ -54,8 +82,22 @@ Posic	1	2	3	4
 
 Proceso	P1	P2	P3	P4
 ID		01	02	03	04
+Instruc	0	10	10	10
+Estado	T	L	L	L
+Posic	1	2	3	4
+
+
+Proceso	P1	P2	P3	P4
+ID		01	02	03	04
 Instruc	0	0	10	10
 Estado	T	E	L	L
+Posic	0	1	2	3
+
+
+Proceso	P1	P2	P3	P4
+ID		01	02	03	04
+Instruc	0	0	10	10
+Estado	T	T	L	L
 Posic	0	1	2	3
 
 
@@ -68,8 +110,22 @@ Posic	0	0	1	2
 
 Proceso	P1	P2	P3	P4
 ID		01	02	03	04
+Instruc	0	0	0	10
+Estado	T	T	T	L
+Posic	0	0	1	2
+
+
+Proceso	P1	P2	P3	P4
+ID		01	02	03	04
 Instruc	0	0	0	0
 Estado	T	T	T	E
+Posic	0	0	0	1
+
+
+Proceso	P1	P2	P3	P4
+ID		01	02	03	04
+Instruc	0	0	0	0
+Estado	T	T	T	T
 Posic	0	0	0	1
 
 
